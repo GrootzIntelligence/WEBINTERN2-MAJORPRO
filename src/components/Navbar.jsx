@@ -1,16 +1,31 @@
-import { NavLink } from "react-router-dom"
+import React, { useState } from 'react';
+import './Navbar.css';
 
-function Navbar(){
-    return(
-        <div className="top-0 flex bg-transparent text-white h-[10vh] w-full justify-end gap-[10vh] pr-[4.4vh] pt-[4.4vh] text-[2.5vh]">
-            <NavLink className='hover:'>Home</NavLink>
-            <NavLink>Services</NavLink>
-            <NavLink>About us</NavLink>
-            <NavLink>Testimonials</NavLink>
-            <NavLink>Contact Us</NavLink>
+const Navbar = () => {
+  const [isNavVisible, setNavVisible] = useState(false);
 
-        </div>
-    )
-}
+  const toggleNav = () => {
+    setNavVisible(!isNavVisible);
+  };
+
+  return (
+    <nav className={`navbar ${isNavVisible ? 'h-nav-resp' : ''}`}>
+      <div className="logo">
+        <img src="logo.jpg" alt="logo" />
+      </div>
+      <ul className={`nav-list ${isNavVisible ? 'v-class-resp' : ''}`}>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#ContactUs">Contact Us</a></li>
+      </ul>
+      <div className="burger" onClick={toggleNav}>
+        <div className="line"></div>
+        <div className="line"></div>
+        <div className="line"></div>
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;
