@@ -1,0 +1,43 @@
+.fixed-footer {
+    position: relative; /* Positioning */
+    width: 100%;
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), transparency); Gradient with transparency at the top */
+    background-color: black;
+    color: white; /* Text color */
+    z-index: 100;
+    height: 60px; /* Reduced height */
+    padding: 0 1rem; /* Padding */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center content vertically */
+    justify-content: space-between; /* Space between items */
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between icons */
+    margin-right: 100px;
+}
+
+.footer-links a {
+    background-color: white; /* Background color for icons */
+    color: black; /* Icon color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+    border-radius: 50%; /* Circular icon */
+    width: 28px; /* Adjust size */
+    height: 28px; /* Adjust size */
+}
+
+.footer-links a:hover {
+    background-color: #364445; /* Light background on hover */
+}
+
+.footer-text {
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+    font-size: 0.875rem; /* Smaller font size */
+    flex: 1; /* Take remaining space */
+}
