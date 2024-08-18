@@ -6,7 +6,11 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+<<<<<<< HEAD
     "framer-motion": "^11.3.27",
+=======
+    "framer-motion": "^11.3.28",
+>>>>>>> 4aba7c03bd1916c439dd6044721fe9f2a45f30db
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
