@@ -16,7 +16,9 @@
     top: 0;
     z-index: 1000;
     background: black;
+    
     padding: 10px 20px;
+    height: 10vh;
   }
   
   .logo {
@@ -51,7 +53,7 @@
   .nav-list li a {
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1vw;
   }
   
   .nav-list li a:hover {
