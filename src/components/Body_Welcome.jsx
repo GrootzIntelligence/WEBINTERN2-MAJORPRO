@@ -11,7 +11,7 @@ function Body_Welcome() {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <h1 className="text-green-300 text-5xl text-center text-bold sm:text-8xl">
+    <h1 className="text-5xl sm:text-8xl text-center font-bold" style={{ color: '#5070fd' }}>
         <h1 className="text-white text-center text-bold">
           Welcome <br />
           to <br />

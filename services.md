@@ -1,6 +1,4 @@
-SERVICES OF GROOTZ INTELLIGENCE
 
-IT services
 Tailored services: We create extensive android applications or websites that are tailored to your needs while keeping in mind the current competitive environment of corporate industry that demands something different. Whatever you desire for comes in handy with the work of Grootz team that works for your satisfaction and happiness.
 
 

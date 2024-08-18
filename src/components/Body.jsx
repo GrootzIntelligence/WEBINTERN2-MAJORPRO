@@ -2,7 +2,7 @@ import Body_Welcome from "./Body_Welcome";
 import Body_AboutUs from './Body_AboutUs';
 import Body_ContactUs from "./Body_ContactUs";
 
-import Net from 'vanta/dist/vanta.net.min'
+import Waves from 'vanta/dist/vanta.waves.min'
 import React, { useState, useEffect, useRef } from 'react'
 
 
@@ -13,25 +13,26 @@ function Body() {
     const ref2 = useRef(null);
     useEffect(() => {
       if (!vantaEffect1 && ref1.current) {
-        setVantaEffect1(Net({
-          el: ref1.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.00,
-          minWidth: 200.00,
-          scale: 1.00,
-          scaleMobile: 1.00,
-          color: 0x3fffa2,
-          backgroundColor: 0x10101,
-          points: 20.00,
-          maxDistance: 23.00,
-          spacing: 18.00
+        setVantaEffect1(
+          Waves({
+            el: ref1.current,
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00,
+            color: 0x10101,
+            shininess: 62.00,
+            waveHeight: 23.50,
+            waveSpeed: 0.85,
+            zoom: 0.94
         }     
         ))
       }
       if (!vantaEffect2 && ref2.current) {
-        setVantaEffect2(Net({
+        setVantaEffect2(Waves({
           el: ref2.current,
           mouseControls: true,
           touchControls: true,
@@ -40,13 +41,12 @@ function Body() {
           minWidth: 200.00,
           scale: 1.00,
           scaleMobile: 1.00,
-          color: 0x3fffa2,
-          backgroundColor: 0x10101,
-          points: 20.00,
-          maxDistance: 23.00,
-          spacing: 18.00
-        }
-        
+          color: 0x10101,
+          shininess: 62.00,
+          waveHeight: 23.50,
+          waveSpeed: 0.85,
+          zoom: 0.94
+}       
         ))
       }
   

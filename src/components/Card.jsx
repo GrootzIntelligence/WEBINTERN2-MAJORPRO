@@ -4,7 +4,7 @@ export default function Card({ title, description, image }) {
   return (
     <motion.div
       className="flex w-full h-full flex-wrap-reverse"
-      initial={{ opacity: 0, y: 100, scale: 0.9, rotate: -5 }}
+      // initial={{ opacity: 0, y: 100, scale: 0.9, rotate: -5 }}
       whileInView={{ opacity: 1, y: 0, scale: 1, rotate: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
       viewport={{ once: true, amount: 0.5 }}
