@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { Suspense, lazy } from 'react';
 import { motion } from 'framer-motion';
-import Card from './Card';
-import Card2 from './Card2';
 import content from './aboutContent.json';
+
+// Lazy load the Card and Card2 components
+const Card = lazy(() => import('./Card'));
+const Card2 = lazy(() => import('./Card2'));
 
 function Body_AboutUs() {
   return (
@@ -17,23 +19,25 @@ function Body_AboutUs() {
       <h1 className="text-black text-4xl font-bold mb-4">
         IT services
       </h1>
-      {content.cards.map((card, index) => (
-        index % 2 === 0 ? (
-          <Card
-            key={index}
-            title={card.title}
-            description={card.description}
-            image={card.image}
-          />
-        ) : (
-          <Card2
-            key={index}
-            title={card.title}
-            description={card.description}
-            image={card.image}
-          />
-        )
-      ))}
+      <Suspense fallback={<div>Loading...</div>}>
+        {content.cards.map((card, index) => (
+          index % 2 === 0 ? (
+            <Card
+              key={index}
+              title={card.title}
+              description={card.description}
+              image={card.image}
+            />
+          ) : (
+            <Card2
+              key={index}
+              title={card.title}
+              description={card.description}
+              image={card.image}
+            />
+          )
+        ))}
+      </Suspense>
     </motion.div>
   );
 }

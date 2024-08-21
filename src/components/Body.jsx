@@ -1,12 +1,31 @@
 import Body_Welcome from "./Body_Welcome";
 import Body_AboutUs from './Body_AboutUs';
 import Body_ContactUs from "./Body_ContactUs";
+import content from './aboutContent.json';
+
 
 import Waves from 'vanta/dist/vanta.waves.min'
 import React, { useState, useEffect, useRef } from 'react'
 
+const preloadImages = async () => {
+  const images = content.cards.map(card => card.image);
+  const promises = images.map(src => new Promise(resolve => {
+    const img = new Image();
+    img.src = src;
+    img.onload = resolve;
+  }));
+  await Promise.all(promises);
+};
+
 
 function Body() {
+
+  
+  useEffect(() => {
+    preloadImages();
+  }, []);
+
+
     const [vantaEffect1, setVantaEffect1] = useState(null);
     const [vantaEffect2, setVantaEffect2] = useState(null);
     const ref1 = useRef(null);
