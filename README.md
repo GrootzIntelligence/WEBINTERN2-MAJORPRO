@@ -40,7 +40,7 @@ To set up the project locally, follow these steps:
 
    ```bash
    git clone https://github.com/GrootzIntelligence/WEBINTERN2-MAJORPRO.git
-   cd grootz-about-us
+   cd WEBINTERN2-MAJORPRO
    ```
 
 2. **Install dependencies:** 
