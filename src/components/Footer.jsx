@@ -9,7 +9,7 @@ const Footer = () => {
 
     return (
         <section className="fixed-footer py-2 sm:py-2 lg:py-2">
-            <div className="px-2 mx-auto sm:px-4 lg:px-6 max-w-7xl flex items-center justify-between">
+            <div className="px-2 mx-auto sm:px-4 lg:px-6 max-w-7xl flex items-center justify-between" id="About">
                 <div className="footer-links flex items-center space-x-3">
                     <a href={twitter_link} title="Twitter" className="flex items-center justify-center">
                         <svg className="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">

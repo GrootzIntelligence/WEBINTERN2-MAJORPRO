@@ -23,7 +23,7 @@ const Navbar = () => {
       </div>
       <ul className={`nav-list ${isNavVisible ? 'v-class-resp' : ''}`}>
         <li><a href="#Home" onClick={(e) => scrollToSection('Home', e)}>Home</a></li> 
-        <li><a href="#Body_AboutUs" onClick={(e) => scrollToSection('ContactUs', e)}>About</a></li> 
+        <li><a href="#About" onClick={(e) => scrollToSection('About', e)}>About</a></li> 
         <li><a href="#Services" onClick={(e) => scrollToSection('Body_AboutUs', e)}>Services</a></li> 
         <li><a href="#ContactUs" onClick={(e) => scrollToSection('ContactUs', e)}>Contact Us</a></li>
       </ul>
