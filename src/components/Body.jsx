@@ -17,14 +17,11 @@ const preloadImages = async () => {
   await Promise.all(promises);
 };
 
-
 function Body() {
-
   
   useEffect(() => {
     preloadImages();
   }, []);
-
 
     const [vantaEffect1, setVantaEffect1] = useState(null);
     const [vantaEffect2, setVantaEffect2] = useState(null);
@@ -78,14 +75,14 @@ function Body() {
 
 
   return (
-    <div className="flex flex-col">
+    <div id="Home" className="flex flex-col" >
       <div className="w-screen h-screen flex flex-col" ref={ref1}>
         <Body_Welcome />
       </div>
-      <div className="w-screen flex flex-col bg-white">
+      <div className="w-screen flex flex-col bg-white" id="Body_AboutUs">
         <Body_AboutUs />
       </div>
-      <div className="w-screen h-screen flex flex-col " ref={ref2}>
+      <div id="ContactUs" className="w-screen h-screen flex flex-col" ref={ref2}>
         <Body_ContactUs />
       </div>
     </div>

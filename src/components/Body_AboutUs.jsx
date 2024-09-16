@@ -19,7 +19,6 @@ function Body_AboutUs() {
       <h1 className="text-black text-4xl font-bold mb-4">
         IT services
       </h1>
-      <Suspense fallback={<div>Loading...</div>}>
         {content.cards.map((card, index) => (
           index % 2 === 0 ? (
             <Card
@@ -37,7 +36,6 @@ function Body_AboutUs() {
             />
           )
         ))}
-      </Suspense>
     </motion.div>
   );
 }

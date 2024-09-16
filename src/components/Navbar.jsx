@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -8,16 +8,24 @@ const Navbar = () => {
     setNavVisible(!isNavVisible);
   };
 
+  const scrollToSection = (id, event) => {  // {{ edit_1 }}
+    event.preventDefault();  // Prevent default anchor behavior
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <nav className={`navbar ${isNavVisible ? 'h-nav-resp' : ''}`}>
       <div className="logo">
         <img src="logo.jpg" alt="logo" />
       </div>
       <ul className={`nav-list ${isNavVisible ? 'v-class-resp' : ''}`}>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li><a href="#ContactUs">Contact Us</a></li>
+        <li><a href="#Home" onClick={(e) => scrollToSection('Home', e)}>Home</a></li> 
+        <li><a href="#Body_AboutUs" onClick={(e) => scrollToSection('ContactUs', e)}>About</a></li> 
+        <li><a href="#Services" onClick={(e) => scrollToSection('Body_AboutUs', e)}>Services</a></li> 
+        <li><a href="#ContactUs" onClick={(e) => scrollToSection('ContactUs', e)}>Contact Us</a></li>
       </ul>
       <div className="burger" onClick={toggleNav}>
         <div className="line"></div>
