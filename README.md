@@ -1,5 +1,5 @@
 # Grootz Intelligence - About Us Website
-
+(OPEN SOURCE PROJECT DEMO BY GROTZ)
 Welcome to the official "About Us" website for Grootz Intelligence. This project is developed by Web Dev Intern Team 2, a team of 7 web development interns, using modern web technologies like Next.js, JavaScript, and Tailwind CSS.
 
 ## Table of Contents
@@ -63,3 +63,9 @@ To set up the project locally, follow these steps:
 5. Rishab Mishra
 6. Sahil Wadhwa
 7. Umar Iqbal
+
+
+Project Approved !
+Date: 18 December 2024
+By: Shivam Rajput (founder)
+Tested By: Core Team (Grootz)
