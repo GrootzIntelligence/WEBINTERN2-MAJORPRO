@@ -65,7 +65,7 @@ To set up the project locally, follow these steps:
 7. Umar Iqbal
 
 
-##Project Approved !
-Date: 18 December 2024
-By: Shivam Rajput (founder)
-Tested By: Core Team (Grootz)
+## Project Approved !
+- Date: 18 December 2024
+- By: Shivam Rajput (founder)
+- Tested By: Core Team (Grootz)
